@@ -1,0 +1,38 @@
+{
+  "name": "icon-store",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.0-14",
+    "@fortawesome/free-solid-svg-icons": "^5.1.0-11",
+    "@fortawesome/react-fontawesome": "^0.1.0-11",
+    "@tauri-apps/api": "^1.0.0-rc.5",
+    "animejs": "^3.1.0",
+    "qs": "^6.7.0",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-flip-toolkit": "^7.0.5-1",
+    "react-router": "^5.0.1",
+    "react-router-dom": "^5.0.1",
+    "sanitize.css": "^11.0.0",
+    "styled-components": "^4.3.2"
+  },
+  "scripts": {
+    "tauri": "tauri",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "deploy": "yarn run build; cd build; cp index.html 200.html; surge --domain react-flip-toolkit.surge.sh"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^1.0.0-rc.10",
+    "react-scripts": "2.1.5"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
